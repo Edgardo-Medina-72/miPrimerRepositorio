@@ -1,0 +1,155 @@
+.contenedor {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.cubo-anim {
+  width: 200px;
+  height: 200px;
+  background-color: coral;
+  border: thin solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 32px;
+  /* animación */
+  animation-name: animacion;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+  animation-direction: alternate;
+  animation-iteration-count: 6;
+}
+
+.h3-cubo {
+  animation-name: animacion-cubo;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+  animation-direction: alternate;
+  animation-iteration-count: 6;
+}
+
+.h3-circulo {
+  position: absolute;
+  animation-name: animacion-circulo;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+  animation-direction: alternate;
+  animation-iteration-count: 6;
+}
+
+/* .cubo-anim:hover,
+.h3-cubo:hover,
+.h3-circulo:hover {
+  transition: animation-name 18s;
+} */
+
+@keyframes animacion {
+  0% {
+    background-color: chocolate;
+    border-radius: 0%;
+  }
+  25% {
+    background-color: chocolate;
+    border-radius: 12.5%;
+  }
+  50% {
+    background-color: blue;
+    border-radius: 25%;
+  }
+  75% {
+    background-color: blue;
+    border-radius: 37.5%;
+  }
+  100% {
+    background-color: chartreuse;
+    border-radius: 50%;
+  }
+}
+
+@keyframes animacion-circulo {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0.25;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  75% {
+    opacity: 0.75;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes animacion-cubo {
+  0% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 0.75;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  75% {
+    opacity: 0.25;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.cubo-trans {
+  width: 200px;
+  height: 200px;
+  background-color: coral;
+  border: thin solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 32px;
+  /* animacion */
+  animation-name: transformation;
+  animation-duration: 3s;
+  animation-fill-mode: backwards;
+  animation-direction: alternate;
+  animation-iteration-count: 6;
+}
+
+@keyframes transformation {
+  0% {
+    transform: translate(100px, 10px);
+  }
+  25% {
+    transform: rotate(45deg);
+  }
+  50% {
+    transform: scale(0.25, 0.25);
+  }
+  75% {
+    transform: scaleX(0.25);
+  }
+  /* 85% {
+    transform: rotatez(90deg);
+  } */
+  100% {
+    transform: skew(20deg);
+  }
+}
+
+.cubo {
+  width: 200px;
+  height: 200px;
+  background-color: coral;
+  border: thin solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 32px;
+  position: absolute;
+}

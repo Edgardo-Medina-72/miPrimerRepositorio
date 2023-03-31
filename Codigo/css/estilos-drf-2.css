@@ -1,0 +1,110 @@
+html {
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+}
+
+.box {
+  width: 97vw;
+  height: 96vh;
+  margin: 9px 5px;
+  border: thick double rgb(10, 231, 220);
+  background-color: beige;
+  background-image: url("../img/textura-fondo-madera_1421-587.webp");
+}
+
+@font-face {
+  font-family: "Shapes";
+  src: url("../assets/wood_shapes/Wood\ Shapes.ttf");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "BLOBBYCHUG";
+  src: url("../assets/blobby_chug/BLOBBYCHUG.ttf");
+  font-display: swap;
+}
+
+h1 {
+  font-size: 80px;
+  font-size: 120px;
+  font-family: "Shapes";
+  /* font-family: "BLOBBYCHUG"; */
+  font-style: oblique;
+  text-align: center;
+  text-shadow: 5px 5px rgb(230, 180, 43);
+  width: 350px;
+  position: relative;
+  top: 10%;
+  left: 5%;
+  z-index: 999;
+}
+
+.bg-img {
+  position: absolute;
+  top: 5%;
+  left: 33.5%;
+  width: 65%;
+  mix-blend-mode: normal;
+}
+
+.upr-img {
+  position: absolute;
+  top: 2.5%;
+  left: 70%;
+  mix-blend-mode: color-burn;
+}
+
+.port-h2 {
+  position: absolute;
+  bottom: 15%;
+  left: 10%;
+  font-size: 20px;
+  background-color: yellow;
+  border-radius: 5px;
+  border-color: red;
+  box-shadow: 5px 5px rgb(230, 180, 43);
+}
+
+ul {
+  position: absolute;
+  bottom: 4%;
+  left: 5%;
+}
+
+li {
+  padding: 14px;
+}
+
+a {
+  color: green;
+  font-size: 18px;
+}
+
+.card {
+  width: 180px;
+  margin: 20px 15px;
+  border: thin solid rgb(221, 100, 19);
+  text-align: center;
+}
+
+.display {
+  display: inline-block;
+}
+
+.card img {
+  max-width: 100%;
+}
+
+h2 {
+  margin-top: 16px;
+  margin-bottom: 0;
+  font-size: 50px;
+  font-family: "Times New Roman", Times, serif;
+  text-decoration: underline;
+}
+
+.display-block {
+  display: block;
+  position: absolute;
+  right: 5%;
+}

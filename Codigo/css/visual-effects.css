@@ -1,0 +1,40 @@
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+  font-family: sans-serif;
+}
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+.card {
+  border: thick solid #000;
+  background-image: url("./img/plano-escritorio.jpeg");
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 5rem;
+  width: 715px;
+  height: 568px;
+}
+
+.relative {
+  position: relative;
+  width: 725px;
+  height: 578px;
+}
+
+.absolute {
+  position: absolute;
+  top: 20px;
+  left: 330px;
+}
+
+.blend-modes img {
+  mix-blend-mode: multiply;
+}
+
+div > h3 {
+  color: hsla(108, 81%, 45%, 0.363);
+}

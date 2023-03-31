@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/estilos.css" />
+    <link rel="icon" href="./img/carpinteria.png" type="image/x-icon" />
+    <title>Trabajos de Carpintería</title>
+  </head>
+  <body>
+    <header class="portada" id="inicio">
+      <section class="orden-portada">
+        <nav class="nav-uno">
+          <div class="contenedor">
+            <label class="label-hamb" for="hamburguesa">
+              <img
+                class="menu-hamburguesa"
+                src="./img/hamburquesa.svg"
+                alt="menu-hamburguesa"
+              />
+            </label>
+            <input type="checkbox" id="hamburguesa" />
+            <ul>
+              <a href="#pie">Cotizar</a>
+              <a href="#pie">Contacto</a>
+              <a href="#pie">Nosotros</a>
+            </ul>
+          </div>
+        </nav>
+        <h1>Muebles a Medida</h1>
+        <nav class="nav-dos">
+          <h2>Ingresá a nuestro showroom</h2>
+          <ul>
+            <a href="#living">Living</a>
+            <a href="#cocina">Cocina</a>
+            <a href="#dormitorio">Dormitorio</a>
+            <a href="#baño">Baño</a>
+          </ul>
+        </nav>
+      </section>
+      <img
+        class="img-port"
+        src="./img/foto-portada.jpeg"
+        alt="bocetos de diseños"
+      />
+    </header>
+    <main>
+      <section class="main">
+        <header class="encabezado">
+          <h2 id="living">Muebles para Living</h2>
+          <a href="#inicio">Volver a menú</a>
+        </header>
+        <section class="productos">
+          <div class="card">
+            <img src="./img/Porta-maceta-1.jpg" alt="porta maceta" />
+            <div>
+              <h3>Porta macetas</h3>
+              <a href="./index2.html" target="_parent"> mas imagenes</a>
+            </div>
+          </div>
+          <div class="card">
+            <img src="./img/copero-1.jpg" alt="copero" />
+            <div>
+              <h3>Copero</h3>
+              <a href="./index3.html" target="_parent"> mas imagenes</a>
+            </div>
+          </div>
+          <div class="card">
+            <img src="./img/copero-3.jpg" alt="copero de pared" />
+            <div>
+              <h3>Copero de Pared</h3>
+              <a href="./index3.html" target="_parent">mas imagenes</a>
+            </div>
+          </div>
+          <div class="card">
+            <img src="./img/Porta-botella-1.jpg" alt="porta boltella" />
+            <div>
+              <h3>Porta botella</h3>
+              <a href="./index3.html" target="_parent">mas imagenes</a>
+            </div>
+          </div>
+        </section>
+      </section>
+      <section class="main">
+        <header class="encabezado">
+          <h2 id="cocina">Muebles de Cocina</h2>
+          <a href="#inicio">Volver a menú</a>
+        </header>
+        <section class="productos">
+          <div class="card">
+            <img src="./img/Mesa-quesera-2.jpg" alt="mesa quesera" />
+            <div>
+              <h3>Mesa Quesera</h3>
+              <a href="./index1.html" target="_parent">mas imagenes</a>
+            </div>
+          </div>
+          <div class="card">
+            <img src="./img/Silla-grande-1.jpg" alt="silla brande" />
+            <div>
+              <h3>Silla Grande</h3>
+              <a href="./index3.html" target="_parent">mas imagenes</a>
+            </div>
+          </div>
+          <div class="card">
+            <img src="./img/Organizador-1.jpg" alt="Organizador" />
+            <div>
+              <h3>Organizador</h3>
+              <a href="./index3.html" target="_parent">mas imagenes</a>
+            </div>
+          </div>
+        </section>
+      </section>
+      <section class="main">
+        <header class="encabezado">
+          <h2 id="dormitorio">Muebles para dormitorio</h2>
+          <a href="#inicio">Volver a menú</a>
+        </header>
+        <section class="productos">
+          <div class="card">
+            <img src="./img/Zapatillero.jpg" alt="zapatillero" />
+            <div>
+              <h3>Zapatillero</h3>
+              <a href="./index3.html" target="_parent">mas imagenes</a>
+            </div>
+          </div>
+        </section>
+      </section>
+      <section class="main">
+        <header class="encabezado">
+          <h2 id="baño">Muebles de baño</h2>
+          <a href="#inicio">Volver a menú</a>
+        </header>
+        <section class="productos">
+          <div class="card">
+            <img src="./img/Repisa-baño-1.jpg" alt="repisa de baño" />
+            <div>
+              <h3>Repisa para baño</h3>
+              <a href="./index3.html" target="_parent">mas imagenes</a>
+            </div>
+          </div>
+        </section>
+      </section>
+    </main>
+    <footer class="footer" id="pie">
+      <header class="encabezado">
+        <h2 id="cotizar">Soicita la cotización de tu proyecto</h2>
+        <a href="#inicio">Volver a menú</a>
+      </header>
+      <form action="https://formspree.io/f/mgeqbazd" method="POST">
+        <div class="item-formulario">
+          <label for="nombreUsuario"> Nombre :</label>
+          <input
+            class="input-form"
+            type="text"
+            id="nombreUsuario"
+            name="nombre"
+          />
+        </div>
+        <div class="item-formulario">
+          <label for="apellidoUsuario"> Apellido :</label>
+          <input
+            class="input-form"
+            type="text"
+            id="apellidoUsuario"
+            name="apellido"
+          />
+        </div>
+        <div class="item-formulario">
+          <label for="email"> Correo Electronico :</label>
+          <input
+            class="input-form"
+            type="email"
+            id="email"
+            name="email"
+            placeholder="ejemplo@ejemplo.com"
+          />
+        </div>
+        <div>
+          <label for="mensaje">Deje su mensaje o comentario:</label>
+          <textarea
+            name="mensaje"
+            id="mensaje"
+            rows="8"
+            cols="100"
+            placeholder="dejanos una descripción de tu proyecto con medidas aproximadas"
+          ></textarea>
+        </div>
+        <input type="submit" value="Enviar" />
+      </form>
+      <div class="datos-contacto">
+        <ul>
+          <li>Derechos de autor - &copy; Muebles a medida.com</li>
+          <li>
+            <img
+              class="icono"
+              src="./img/telefono-inteligente.png"
+              alt="icono de celular"
+            />
+            Contacto: cel.: 3487550795
+          </li>
+          <li>
+            <img class="icono" src="./img/mensaje.png" alt="icono de correo" />
+            mail: mueblesamedida@gmail.com
+          </li>
+          <li>
+            Encontranos en las redes
+            <img class="icono" src="./img/facebook.png" alt="icono facebook" />
+            <img
+              class="icono"
+              src="./img/instagram.png"
+              alt="icono instagram"
+            />
+          </li>
+        </ul>
+      </div>
+    </footer>
+    <script src="./script.js"></script>
+  </body>
+</html>

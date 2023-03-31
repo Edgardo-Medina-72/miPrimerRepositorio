@@ -1,0 +1,110 @@
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Shapes";
+  src: url("../assets/Fonts/Wood\ Shapes.ttf");
+  font-display: swap;
+}
+
+.portada {
+  border: 2px double black;
+  background-image: url("../img/textura-fondo-madera_1421-587.webp");
+  width: 100%;
+  height: 100vh;
+}
+
+.display {
+  display: inline-block;
+}
+
+h1 {
+  font-size: 120px;
+  font-family: "Shapes";
+  font-style: oblique;
+  text-align: center;
+  text-shadow: 5px 5px rgb(230, 180, 43);
+  max-width: 760px;
+  padding-top: 130px;
+  position: absolute;
+  z-index: 5;
+}
+
+.img-port {
+  max-width: 65%;
+  position: absolute;
+  top: 30px;
+  right: 30px;
+}
+
+nav {
+  position: absolute;
+  top: 500px;
+}
+
+nav h2 {
+  font-size: 32px;
+  font-style: oblique;
+  padding-top: 30px;
+  padding-left: 50px;
+}
+
+ul {
+  padding: 14px 50px;
+}
+
+a {
+  padding: 15px;
+  font-size: 24px;
+  color: green;
+  font-weight: bold;
+  font-style: oblique;
+}
+
+a:hover {
+  color: #e94bb4;
+}
+
+section h2 {
+  font-size: 40px;
+  font-style: oblique;
+  padding-top: 30px;
+  padding-left: 50px;
+}
+
+section a {
+  font-size: 20px;
+  padding: 0 30px 0 0;
+  display: block;
+  text-align: end;
+}
+
+section a:hover {
+  color: #e94bb4;
+}
+
+.card {
+  width: 180px;
+  margin: 20px 15px;
+  border: thin solid rgb(221, 100, 19);
+  text-align: center;
+}
+
+.card img {
+  max-width: 100%;
+}
+
+.footer {
+  background-image: url("../img/tablas-quemadas-oscuras_90380-3553.jpg");
+  padding: 60px;
+  border: 2px double black;
+  font-size: 20px;
+  color: greenyellow;
+}

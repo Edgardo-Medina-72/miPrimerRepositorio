@@ -1,0 +1,140 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(../img-2/lbEozDR-pictures-of-black-panthers-in-the-wild.jpg);
+  /* background-position: center 100px; */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+nav {
+  /* para el caso de solo menú */
+  /* display: flex;
+  justify-content: flex-end;
+  align-items: flex-start; */
+  /* para el caso de agregar titulos */
+  position: fixed;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 10px;
+  border: 1px solid black;
+  width: 100%;
+  height: 100px;
+  background-color: lightgreen;
+}
+
+h1 {
+  grid-column: 2/3;
+  justify-self: center;
+  align-self: center;
+  font-size: 36px;
+  color: #3618e4;
+}
+
+.contenedor {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  position: relative;
+}
+
+.img-hamburguesa {
+  width: 60px;
+}
+
+#hamburguesa {
+  visibility: hidden;
+  /* display: none; */
+}
+
+/* menu desplegable pasando el mouse sobre la imagen de la hamburguesa*/
+/* .menu-hamburguesa:hover + ul{
+    display: flex;
+
+} */
+/* si quiero hacer ambos (hover y checked)*/
+
+ul {
+  list-style-type: none;
+  display: none; /* lo coloco para que en un inicio no se vea*/
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  width: 100px;
+  gap: 20px;
+  top: 60px;
+}
+
+.label-hamb:hover ~ ul {
+  display: flex;
+}
+
+#hamburguesa:checked + ul {
+  display: flex;
+}
+
+li {
+  padding: 5px;
+  background-color: #3618e4;
+  color: white;
+}
+
+li:hover {
+  cursor: pointer;
+}
+
+li:active {
+  background-color: #f90;
+  color: #102c3e;
+}
+
+/* .main-format {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(5, 150px);
+} */
+/* h2 {  
+  grid-column: 2;
+  grid-row: 2;
+  justify-self: center;
+}  */
+
+.main-format {
+  width: 100%;
+  height: 2000px;
+  position: relative;
+  top: 100px;
+}
+
+.primer {
+  width: 100%;
+  height: 250px;
+  text-align: center;
+  font-size: 70px;
+  color: darkkhaki;
+}
+
+.sticky-p {
+  position: sticky;
+  top: 120px;
+}
+
+.segunda {
+  width: 100%;
+  height: 500px;
+  font-size: 50px;
+  color: #f90;
+}
+.sticky-h2 {
+  text-align: center;
+  font-size: 70px;
+  color: yellowgreen;
+  position: sticky;
+  top: 120px;
+}

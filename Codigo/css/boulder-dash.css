@@ -1,0 +1,44 @@
+.formato {
+  width: 100px;
+  height: 100px;
+  margin: 2px;
+  border: thin solid black;
+  text-align: center;
+}
+
+.fondo1 {
+  background-color: blue;
+}
+.fondo2 {
+  background-color: green;
+}
+.fondo3 {
+  background-color: red;
+}
+
+.contenedor1 {
+  margin-left: 30px;
+}
+
+.traslado1 {
+  transition: transform 1s 2s ease-in-out;
+  /* transition-property: transform;
+  transition-duration: 1s;
+  transition-delay: 2s;
+  transition-timing-function: ease-in-out; */
+  transform: /* perspective(100vh) rotateX(75deg) */ translateY(104px);
+}
+
+.traslado2 {
+  transition-property: transform;
+  transition-duration: 1s;
+  transition-delay: 1s;
+  transform: /* perspective(100vh) rotateX(75deg) */ translateY(104px);
+}
+
+.ocultar {
+  transition-property: opacity;
+  transition-duration: 2s;
+  transition-delay: 0.5s;
+  opacity: 0;
+}

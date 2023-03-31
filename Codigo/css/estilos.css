@@ -1,0 +1,351 @@
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Shapes";
+  src: url("../assets/Fonts/Wood\ Shapes.ttf");
+  font-display: swap;
+}
+
+.portada {
+  border: 2px double black;
+  background-image: url("../img/textura-fondo-madera_1421-587.webp");
+  width: 100%;
+  height: 100vh;
+}
+
+.orden-portada {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat (2, 1fr);
+}
+
+/* menu hamburguesa del sitio */
+
+.nav-uno {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  /* grid-column: 2; */
+  padding: 10px 20px;
+  z-index: 5;
+}
+.contenedor {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  position: relative;
+}
+.menu-hamburguesa {
+  width: 60px;
+}
+
+.label-hamb:hover ~ ul {
+  display: flex;
+}
+
+#hamburguesa:checked + ul {
+  display: flex;
+}
+
+#hamburguesa {
+  display: none;
+}
+
+.contenedor ul {
+  list-style-type: none;
+  display: none;
+  flex-direction: column;
+  gap: 20px;
+  width: 100px;
+  align-items: center;
+}
+
+.contenedor a {
+  padding: 10px;
+  background-color: #102c3e;
+  color: white;
+  font-size: 20px;
+}
+
+/* fin */
+
+h1 {
+  font-size: 120px;
+  font-family: "Shapes";
+  font-style: oblique;
+  text-align: center;
+  text-shadow: 5px 5px rgb(230, 180, 43);
+  max-width: 760px;
+  padding: 130px 0 0 20px;
+  grid-column: 1;
+  grid-row: 1;
+  z-index: 5;
+}
+
+.nav-dos {
+  z-index: 5;
+}
+
+.nav-dos h2 {
+  font-size: 40px;
+  font-style: oblique;
+  padding-top: 30px;
+  padding-left: 30px;
+}
+
+.nav-dos ul {
+  padding: 14px 20px;
+}
+
+a {
+  padding: 15px;
+  font-size: 24px;
+  color: green;
+  font-weight: bold;
+  font-style: oblique;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #e94bb4;
+}
+
+.img-port {
+  max-width: 65%;
+  position: absolute;
+  top: 30px;
+  left: 445px;
+}
+
+/* hojas de productos */
+
+.main {
+  border: 2px double black;
+  background-image: url("../img/textura-fondo-madera_1421-587.webp");
+  width: 100%;
+  height: 100vh;
+}
+
+.encabezado {
+  display: flex;
+  justify-content: space-between;
+}
+
+.encabezado h2 {
+  font-size: 40px;
+  font-style: oblique;
+  padding-top: 30px;
+  padding-left: 50px;
+}
+
+.encabezado a {
+  font-size: 20px;
+  padding: 20px 30px 0 0;
+}
+
+.productos {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  padding: 0 20px;
+}
+
+.card {
+  width: 180px;
+  height: 460px;
+  margin-top: 30px;
+  border: thin solid rgb(221, 100, 19);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-size: 20px;
+  text-align: center;
+}
+
+.card img {
+  max-width: 100%;
+}
+
+.scale-uno,
+.scale-dos,
+.scale-tres {
+  transition: all 2s;
+}
+
+.scale-uno:hover {
+  transform: scale(3) translate(60px, 40px);
+}
+
+.scale-dos:hover {
+  transform: scale(3) translate(20px, 40px);
+}
+
+.scale-tres:hover {
+  transform: scale(3) translate(20px, 36px);
+}
+
+.card a {
+  font-size: 16px;
+  padding: 5px 0 0 0;
+}
+
+ul {
+  list-style-type: none;
+  text-align: left;
+  margin-left: 5px;
+}
+
+.footer {
+  background-image: url("../img/tablas-quemadas-oscuras_90380-3553.jpg");
+  background-size: cover;
+  border: 2px double black;
+  font-size: 20px;
+  color: greenyellow;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 600px;
+  gap: 20px;
+  padding: 30px 0 0 30px;
+}
+.item-formulario {
+  display: flex;
+  justify-content: space-between;
+}
+.input-form {
+  width: 70%;
+  height: 20px;
+}
+
+.datos-contacto {
+  padding-left: 30px;
+}
+
+/* estilos para hoja adicional con animación */
+
+.cubo {
+  width: 178px;
+  height: 200px;
+  background-color: beige;
+  border: 1px solid burlywood;
+}
+
+.cinco:hover {
+  animation-name: animacion;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+
+.icono {
+  width: 16px;
+  height: 16px;
+}
+
+@keyframes animacion {
+  0% {
+    background-color: beige;
+    transform: scale(1, 1.5) skewY(0deg) translate(15px, 40px);
+    transition: all 2s;
+  }
+  50% {
+    background-color: black;
+    transform: scale(0.015, 2) skewY(2deg) translate(30px, 40px);
+  }
+  51% {
+    background-color: black;
+    transform: scale(0.015, 2.5) skewY(-2deg) translate(45px, 40px);
+  }
+  100% {
+    background-color: chartreuse;
+    transform: scale(3) skewY(0deg) translate(60px, 40px);
+    color: chartreuse;
+  }
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 100px;
+    padding: 80px 0 0 20px;
+  }
+
+  .img-port {
+    max-width: 85%;
+    top: 30px;
+    left: 30px;
+  }
+
+  .nav-uno {
+    justify-content: flex-end;
+  }
+
+  .card {
+    width: 140px;
+    height: 400px;
+  }
+
+  .encabezado h2 {
+    font-size: 38px;
+    padding-left: 50px;
+  }
+
+  .cubo {
+    width: 138px;
+    height: 150px;
+  }
+}
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 75px;
+    padding: 80px 0 0 20px;
+  }
+
+  .nav-dos h2 {
+    font-size: 35px;
+    padding-top: 30px;
+    padding-left: 30px;
+  }
+
+  a {
+    font-size: 23px;
+  }
+
+  .img-port {
+    max-width: 85%;
+    top: 30px;
+    left: 30px;
+  }
+
+  .nav-uno {
+    justify-content: flex-end;
+  }
+
+  .card {
+    width: 140px;
+    height: 400px;
+  }
+
+  .encabezado h2 {
+    font-size: 38px;
+    padding-left: 50px;
+  }
+
+  .cubo {
+    width: 138px;
+    height: 150px;
+  }
+}
