@@ -52,3 +52,4 @@ let divnum1 = document.querySelector("#num1"); //javaScript
 let divnum2 = document.querySelector("#num2");
 let divnum3 = document.querySelector("#num3");
 */
+/* Codigo */
