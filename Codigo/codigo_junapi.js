@@ -21,3 +21,4 @@ function shuffle(array) {
     let colores = ["blue", "red"];
   }
 };
+/* Cambios */
